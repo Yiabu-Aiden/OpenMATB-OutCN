@@ -1,0 +1,83 @@
+### Lilia实验任务设计 
+
+## 该实验任务执行40min，
+## low load 共执行 10min，每5分钟建立调查问卷
+## mid load 共执行 20min，每5分钟建立调查问卷
+## high load 共执行 10min, 每5分钟建立调查问卷
+
+## MATB介绍页开启
+# Message d'accueil
+0:00:00;instructions;filename;default/welcome_screen.txt
+0:00:00;instructions;start
+
+## Performance 配置并启动（放在场景最前面，发生冲突，默认不开启）
+##0:00:00;performance;taskplacement;topright
+##0:00:00;performance;levelmin;1
+##0:00:00;performance;levelmax;100
+##0:00:00;performance;ticknumber;5
+##0:00:00;performance;criticallevel;20
+##0:00:00;performance;defaultcolor;#00ff00
+##0:00:00;performance;criticalcolor;#00ff00
+##0:00:00;performance;start
+##0:40:00;performance;stop
+
+## 任务初始化
+0:00:00;sysmon;start 
+0:00:00;track;start
+0:00:00;scheduling;start
+0:00:00;resman;start
+0:00:00;communications;start
+
+### 全局默认配置
+## SYSMON
+0:00:00;sysmon;feedbacks-positive-active;True
+0:00:00;sysmon;feedbacks-positive-color;#8EDBB0
+0:00:00;sysmon;feedbacks-negative-active;True
+0:00:00;sysmon;feedbacks-negative-color;#F16464
+
+## TRACK
+0:00:00;track;cursorcolor;#323232
+0:00:00;track;cursorcoloroutside;#F16464
+
+0:00:00;genericscales;filename;nasatlx_en.txt
+
+### low load
+
+## SYSMON
+## 0:00:00;sysmon;title;System Check
+0:00:00;sysmon;lights-1-oncolor;#8EDBB0
+0:00:00;sysmon;lights-2-oncolor;#F16464
+0:00:00;sysmon;lights-1-default;on
+0:00:00;sysmon;lights-2-default;off
+0:00:00;sysmon;alerttimeout;10000
+0:00:00;sysmon;feedbackduration;1500
+
+0:00:20;sysmon;scales-1-side;-1
+0:00:03;sysmon;lights-1-failure;True
+0:00:20;sysmon;scales-2-side;-1
+0:00:08;sysmon;lights-2-failure;True
+0:00:20;sysmon;scales-1-side;-1
+0:00:20;sysmon;scales-1-failure;True
+0:01:00;sysmon;scales-3-side;1
+0:01:00;sysmon;scales-3-failure;True
+0:01:00;sysmon;scales-3-side;-1
+0:01:45;sysmon;scales-3-failure;True
+
+## TRACK
+## 0:00:00;track;title;Track Check
+0:00:00;track;taskupdatetime;10
+0:00:00;track;joystickforce;2
+0:00:00;track;inverseaxis;False
+0:00:00;track;targetproportion;0.25
+
+0:00:05;track;automaticsolver;True
+## 0:00:10;track;automaticsolver;False
+
+0:05:00;genericscales;start
+
+## 任务结束
+0:40:00;sysmon;stop
+0:40:00;track;stop
+0:40:00;scheduling;stop
+0:40:00;resman;stop
+0:40:00;communications;stop

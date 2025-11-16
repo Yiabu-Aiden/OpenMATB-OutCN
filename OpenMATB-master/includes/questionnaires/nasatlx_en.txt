@@ -1,0 +1,12 @@
+Mental demand;How much mental and perceptual activity was required (e.g., thinking, deciding, calculating, remembering, looking, searching, etc.)? Was the task easy or demanding, simple or complex, exacting or forgiving? Trans: 需要多少心智和感知活动（例如，思考、决定、计算、记忆、观察、搜索等）？任务是容易还是有挑战性，简单还是复杂，严苛还是宽松？;Low/High;0/10/5
+
+Physical demand;How much physical activity was required (e.g., pushing, pulling, turning, controlling, activating, etc.)? Was the task easy or demanding, slow or brisk, slack or strenuous, restful or laborious? Trans: 需要多少身体活动（例如，推、拉、转动、控制、启动等）？任务是容易还是有挑战性，慢还是快，松弛还是费力，轻松还是辛苦？;Low/High;0/10/5
+
+Time pressure;How much time pressure did you feel due to the rate or pace at which the tasks or task elements occurred? Was the pace slow and leisurely or rapid and frantic? Trans: 由于任务或任务元素的发生速度或节奏，您感受到了多少时间压力？节奏是慢且悠闲还是快且狂乱？;Low/High;0/10/5
+
+Performance;How successful do you think you were in accomplishing the goals of the task set by the experimenter (or yourself)? How satisfied were you with your performance in accomplishing these goals? Trans: 您认为自己在实现实验者（或您自己）设定的任务目标方面有多成功？您对自己完成这些目标的表现有多满意？;Good/Poor;0/10/5
+
+Effort;How hard did you have to work (mentally or physically) to accomplish your level of performance? Trans: 为了达到您的绩效水平，您需要多努力工作（心智上或身体上）？;Low/High;0/10/5
+
+Frustration;How insecure, discouraged, irritated, stressed and annoyed versus secure, gratified, content, relaxed and complacent did you feel during the task? Trans: 在任务期间，您感到不安全、气馁、烦躁、有压力和恼火，还是感到安全、满意、满足、放松和自满？;Low/High;0/10/5
+

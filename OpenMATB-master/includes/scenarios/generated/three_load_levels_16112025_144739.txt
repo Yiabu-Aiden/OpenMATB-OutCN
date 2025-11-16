@@ -1,0 +1,50 @@
+# OpenMATB scenario generator
+
+# Name: three_load_levels
+# Date: 16/11/2025 14:47:39
+
+
+# Block n¡ã 1. Technical load = 25.0 %
+0:00:00;track;start
+0:00:00;track;targetproportion;0.75
+0:00:00;sysmon;start
+0:00:28;sysmon;lights-1-failure;True
+0:00:14;sysmon;scales-1-failure;True
+0:00:00;communications;start
+0:00:25;communications;radioprompt;own
+0:00:00;resman;start
+0:00:00;resman;tank-a-lossperminute;300
+0:00:00;resman;tank-b-lossperminute;300
+
+# Block n¡ã 2. Technical load = 55.0 %
+0:01:00;track;targetproportion;0.44999999999999996
+0:01:10;sysmon;lights-2-failure;True
+0:01:28;sysmon;lights-1-failure;True
+0:01:42;sysmon;lights-2-failure;True
+0:01:15;sysmon;scales-4-failure;True
+0:01:33;sysmon;scales-1-failure;True
+0:01:47;sysmon;scales-2-failure;True
+0:01:00;communications;radioprompt;other
+0:01:44;communications;radioprompt;own
+0:01:00;resman;tank-a-lossperminute;660
+0:01:00;resman;tank-b-lossperminute;660
+
+# Block n¡ã 3. Technical load = 85.0 %
+0:02:00;track;targetproportion;0.15000000000000002
+0:02:05;sysmon;lights-1-failure;True
+0:02:18;sysmon;lights-1-failure;True
+0:02:30;sysmon;lights-2-failure;True
+0:02:44;sysmon;lights-2-failure;True
+0:02:01;sysmon;scales-4-failure;True
+0:02:18;sysmon;scales-2-failure;True
+0:02:30;sysmon;scales-1-failure;True
+0:02:44;sysmon;scales-3-failure;True
+0:02:04;communications;radioprompt;other
+0:02:29;communications;radioprompt;own
+0:02:43;communications;radioprompt;own
+0:02:00;resman;tank-a-lossperminute;1020
+0:02:00;resman;tank-b-lossperminute;1020
+0:03:00;resman;stop
+0:03:00;communications;stop
+0:03:00;track;stop
+0:03:00;sysmon;stop
